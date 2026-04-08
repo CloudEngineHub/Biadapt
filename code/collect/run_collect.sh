@@ -1,0 +1,15 @@
+xvfb-run -a python Collect/collect_data_main.py \
+    --category  Pen \
+    --primact_type capping  \
+    --out_dir ../exp/Pen_capping_0514 \
+    --mode all  \
+    --target_part_state "open"  \
+    --start_dist 0.15  \
+    --final_dist 0.10   \
+    --move_steps 2000   \
+    --wait_steps 2000   \
+    --num_processes 10  \
+    --start_epoch 0    \
+    --save_interval 10  \
+    --not_check_dual \
+    --no_gui \

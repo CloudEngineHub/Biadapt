@@ -1,0 +1,25 @@
+# Public release Python dependencies.
+# Core torch packages are installed from conda via environment.yml.
+
+h5py
+imageio
+ipdb
+matplotlib
+open3d
+opencv-python
+progressbar2
+scipy
+scikit-learn
+tensorboardX
+tqdm
+transforms3d
+trimesh
+sapien
+diffusers
+einops
+faiss-cpu
+hydra-core
+omegaconf
+open_clip_torch
+pytorch-lightning
+timm

@@ -1,0 +1,37 @@
+CUDA_VISIBLE_DEVICES=0 xvfb-run -a python adapt/sample_affordance.py \
+    --base_dir ../exp/Cor_res/Pliers_0102_10/results/dift/clip_b32_top10_max_transpose \
+    --out_dir ../exp/seen_Scissors2Pliers_0913 \
+    --categories  Pliers \
+    --primact_type opening  \
+    --target_part_state 'random-right' \
+    --num_processes 10 \
+    --setting_data_path ../stats/shape_setting.json \
+    --trg_txt_path ../stats/openning_Train_list.txt \
+    --ctpts_2d_file_path ../stats/ctpts_2d_opening_Pliers.json \
+    --ctpts_3d_file_path ../stats/ctpts_3d_opening_Pliers.json \
+    --ctpt_type txt \
+    --actor1_version model_actor_fir   \
+    --critic1_version model_critic_fir \
+    --aff1_version model_aff_fir \
+    --actor2_version model_actor_sec   \
+    --critic2_version model_critic_sec\
+    --aff2_version model_aff_sec  \
+    --use_CA \
+    --CA_path ../logs/finetune/exp-finetune-opening-Scissors-0826 \
+    --CA_eval_epoch 18-0 \
+    --val_data_dir  ../exp/Pliers_0103_ALL \
+    --val_buffer_max_num  100 \
+    --coordinate_system world \
+    --z_dim 32        \
+    --repeat_num 2  \
+    --euler_threshold 10 \
+    --task_threshold 30 \
+    --num_ctpt1 10       \
+    --num_ctpt2 10       \
+    --rv1 100            \
+    --rv2 100            \
+    --num_pair1 10       \
+    --aff_topk 0.5   \
+    --critic_topk1 0.01 \
+    --critic_topk 0.001 \
+    --no_gui

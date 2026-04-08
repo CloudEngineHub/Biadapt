@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=3 xvfb-run -a python Dualafford_eval/test_score.py \
+    --category_types Pliers \
+    --primact_type opening \
+    --use_CA \
+    --CA_path ../logs/CAtune/exp-fewshot_tune-opening-Pliers-0303 \
+    --start_epoch 0 \
+    --end_epoch 4 \
+    --out_folder Fscore \
+    --critic2_version model_critic_sec \
+    --val_data_dir ../exp/Pliers_0103_ALL \
+    --val_buffer_max_num  500 \
+    --coordinate_system world \
+    --batch_size 32

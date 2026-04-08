@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=1 python adaptation/tune_critic_sec.py \
+    --exp_suffix 0826 \
+    --category_types  Box \
+    --model_version model_critic_sec  \
+    --primact_type unfolding \
+    --offline_data_dir  ../exp/_Unfolding \
+    --val_data_dir   ../exp/Laptop_Unfolding \
+    --use_CA \
+    --CA_path \
+    --eval_epoch \
+    --train_buffer_max_num 1000  \
+    --val_buffer_max_num 300  \
+    --feat_dim 128   \
+    --batch_size 32  \
+    --lr 0.001      \
+    --lr_decay_every 300 \
+    --succ_proportion 0.5 \
+    --fail_proportion 1.5 \
+    --coordinate_system world
