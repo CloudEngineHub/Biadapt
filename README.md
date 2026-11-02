@@ -467,14 +467,16 @@ The most useful outputs to inspect are the success statistics printed by the scr
 If you find this repository useful, please cite:
 
 ```bibtex
-@misc{zhou2026biadaptfewshotbimanualadaptation,
-      title={Bi-Adapt: Few-shot Bimanual Adaptation for Novel Categories of 3D Objects via Semantic Correspondence}, 
-      author={Jinxian Zhou and Ruihai Wu and Yiwei Liu and Yiwen Hou and Xunzhe Zhou and Checheng Yu and Licheng Zhong and Lin Shao},
-      year={2026},
-      eprint={2602.08425},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2602.08425}, 
+@INPROCEEDINGS{11695815,
+  author={Zhou, Jinxian and Wu, Ruihai and Liu, Yiwei and Hou, Yiwen and Zhou, Xunzhe and Yu, Checheng and Zhong, Licheng and Shao, Lin},
+  booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+  title={Bi-Adapt: Few-shot Bimanual Adaptation for Novel Categories of 3D Objects via Semantic Correspondence},
+  year={2026},
+  volume={},
+  number={},
+  pages={11683-11690},
+  keywords={Modeling;Training;Contacts;Printing;Foundation models;Grippers;Learning (artificial intelligence);Arm;Aluminum;Modules (abstract algebra)},
+  doi={10.1109/ICRA57385.2026.11695815}
 }
 ```
 
